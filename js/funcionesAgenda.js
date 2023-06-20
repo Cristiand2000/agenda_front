@@ -1,4 +1,4 @@
-const url = 'http://localhost:8082/api/agendas' 
+const url = 'https://agenda-api-14ee.onrender.com/api/agendas' 
 //url de la api. Al desplegarla en el servidor local colocar la api del servi
 const listar = async() => {
     let respuesta = ''
