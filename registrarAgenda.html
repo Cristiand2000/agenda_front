@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    
+    <title>Registrar Nueva Agenda</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <form class="col s12">
+                <h3>Registrar nueva agenda</h3>
+                <div class="row" style="display: none;">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">access_time</i>
+                        <input id="id" type="text" class="validate" placeholder="id">
+                        <label for="id">id</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">access_time</i>
+                        <input id="hora_inicio" type="time" class="validate" placeholder="hora_inicio">
+                        <label for="hora_inicio">hora_inicio</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">access_time</i>
+                        <input id="hora_fin" type="time" class="validate" placeholder="hora_fin">
+                        <label for="hora_fin">hora_fin</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">date_range</i>
+                        <input id="dia" type="date" class="validate" placeholder="dia">
+                        <label for="dia">dia</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select class="browser-default" id="instructor" name="instructor" required>
+                            <option value="" disabled selected>Elegir el instructor</option>
+                            <option value="Camilo Sanchez">Camilo Sanchez</option>
+                            <option value="Federico">Federico</option>
+                            <option value="Jose Tachido">Jose Tachido</option>
+                            <option value="Eliana Lopez">Eliana Lopez</option>
+                          </select>
+                          
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select class="browser-default" id="clase" name="clase" required>
+                            <option value="" disabled selected>Elegir la clase</option>
+                            <option value="Yoga">Yoga</option>
+                            <option value="Muay Thai">Muay Thai</option>
+                            <option value="Spinnin">Spinnin</option>
+                            <option value="Boxeo">Boxeo</option>
+                            <option value="Circuito">Circuito</option>
+                          </select>
+                          
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select class="browser-default" id="estado">
+                            <option value="" disabled selected>Elegir el estado</option>
+                            <option value="true">Activo</option>
+                            <option value="false">Inactivo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <button id="btnRegistrar" class="btn waves-effect waves-light" type="button" name="action">registrar
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='listar.html'">Regresar</button>
+                    </div>
+                </div>
+            </form>
+          </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
+
+    <script src="js/funcionesAgenda.js">
+
+
+    </script>
+</body>
+</html>
